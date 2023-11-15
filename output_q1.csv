@@ -1,0 +1,13 @@
+Sparse Rod Cutting Algorithm
+Length,Runtime(microseconds)
+4,5
+8,8
+16,15
+32,30
+64,75
+128,132
+256,269
+512,527
+1024,1064
+2048,2460
+4096,4423
