@@ -95,16 +95,16 @@ int getNumWays(int x, vector<int> coins, int num_coins)
 void changeCombos(vector<int> coins, int experimentAmount)
 {
     int num_coins = coins.size();
-    vector<vector<vector<int>>> combinations(experimentAmount + 1);
+    vector<vector<vector<int>>> combinations(experimentAmount + 1); //O(n)
 
     // Initialize the base case: there is one way to make change for amount 0 (using 0 coins)
-    combinations[0].push_back({});
+    combinations[0].push_back({}); //O(1)
 
-    for (int i = 0; i < num_coins; i++)
+    for (int i = 0; i < num_coins; i++) //O(n)
     {
-        for (int j = coins[i]; j <= experimentAmount; j++)
+        for (int j = coins[i]; j <= experimentAmount; j++) //O(n)
         {
-            for (int k = 0; k < combinations[j - coins[i]].size(); k++)
+            for (int k = 0; k < combinations[j - coins[i]].size(); k++) //O(n)
             {
                 vector<int> temp_combination = combinations[j - coins[i]][k];
                 temp_combination.push_back(coins[i]);

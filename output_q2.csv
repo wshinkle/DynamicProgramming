@@ -1,41 +1,41 @@
 Original Algorithm with US Currency
 Experiment,Runtime(microseconds)
-10,4
-50,2
-100,5
-500,33
-1000,64
-1500,143
-2000,196
-3000,230
-5000,277
+10,7
+50,7
+100,13
+500,93
+1000,168
+1500,261
+2000,362
+3000,611
+5000,1029
 
 Original Algorithm with Wizard Currency
 Experiment,Runtime(microseconds)
-10,1
-50,1
-100,2
-500,11
-1000,19
-1500,30
-2000,40
-3000,61
-5000,115
+10,6
+50,4
+100,7
+500,30
+1000,72
+1500,114
+2000,151
+3000,211
+5000,358
 
 Custom Algorithm with US Currency
 Experiment,Runtime(microseconds)
-10,50
-25,139
-50,1030
-100,13943
-200,246226
-500,24571710
+10,138
+25,572
+50,3685
+100,24220
+200,407924
+500,28158963
 
 Custom Algorithm with Wizard Currency
 Experiment,Runtime(microseconds)
-10,54
+10,31
 25,47
-50,195
-100,407
-200,953
-500,6138
+50,143
+100,367
+200,1303
+500,11332
